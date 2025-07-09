@@ -11,7 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: Column(
         children: [
           Flexible(
@@ -22,18 +22,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 '25:00',
                 style: TextStyle(
                   color: Theme.of(context).cardColor,
-                  fontSize: 80,
+                  fontSize: 89,
                   fontWeight: FontWeight.w600,
                 ),
               ),
             ),
           ),
-
           Flexible(
             flex: 2,
             child: Center(
               child: IconButton(
-                iconSize: 120,
+                iconSize: 100,
                 color: Theme.of(context).cardColor,
                 onPressed: () {},
                 icon: Icon(Icons.play_circle_outline),
@@ -49,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                       color: Theme.of(context).cardColor,
                     ),
+
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Text(
                           '0',
                           style: TextStyle(
-                            fontSize: 60,
+                            fontSize: 40,
                             fontWeight: FontWeight.w600,
                             color: Theme.of(
                               context,
